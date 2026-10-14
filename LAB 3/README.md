@@ -70,13 +70,13 @@ true
 **Файлы:** `factorymethod/*.java`
 
 **Классы:**
-- `Logger` — интерфейс
+- `Logger`: интерфейс
 
-- `FileLogger`, `ConsoleLogger` — конкретные объекты
+- `FileLogger`, `ConsoleLogger`: конкретные объекты
 
-- `LoggerFactory` — абстрактная фабрика
+- `LoggerFactory`: абстрактная фабрика
 
-- `FileLoggerFactory`, `ConsoleLoggerFactory` — конкретные фабрики
+- `FileLoggerFactory`, `ConsoleLoggerFactory`: конкретные фабрики
 
 **Вывод:**
 
@@ -92,15 +92,15 @@ Logging to console: Hi from console
 **Файлы:** `abstractfactory/*.java`
 
 **Классы:**
-- `Button`, `Checkbox` — интерфейсы
+- `Button`, `Checkbox`: интерфейсы
 
-- `CertainButton`, `CertainCheckbox`, `AnotherButton`, `AnotherCheckbox` — конкретные объекты
+- `CertainButton`, `CertainCheckbox`, `AnotherButton`, `AnotherCheckbox`: конкретные объекты
 
-- `GUIFactory` — абстрактная фабрика
+- `GUIFactory`: абстрактная фабрика
 
-- `CertainFactory`, `AnotherFactory` — конкретные фабрики
+- `CertainFactory`, `AnotherFactory`: конкретные фабрики
 
-- `Application` — клиент
+- `Application`: клиент
 
 **Вывод:**
 
@@ -118,10 +118,10 @@ Im another checkbox
 **Файлы:** `builder/*.java`
 
 **Классы:**
-- `Computer` — продукт
-- `ComputerBuilder` — интерфейс строителя
-- `GamingComputerBuilder` — конкретный строитель
-- `ComputerDirector` — директор, отвечающий за порядок сборки
+- `Computer`: обьект
+- `ComputerBuilder`: интерфейс "строителя"
+- `GamingComputerBuilder`: конкретный "строитель"
+- `ComputerDirector`: директор, отвечающий за порядок сборки
 
 **Вывод:**
 
