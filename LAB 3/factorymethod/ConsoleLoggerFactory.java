@@ -1,3 +1,4 @@
+package factorymethod;
 public class ConsoleLoggerFactory extends LoggerFactory{
     @Override 
     public Logger createLogger() {

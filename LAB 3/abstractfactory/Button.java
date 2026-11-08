@@ -1,3 +1,2 @@
-public interface Button {
-    void paint();
-}
+package abstractfactory;
+interface Button { void draw(); }
