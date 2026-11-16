@@ -1,10 +1,10 @@
 package proxy;
 
-class ProtectedDocumentProxy implements Document {
+class ProtectedDocument implements Document {
     private RealDocument real;
     private String role;
 
-    ProtectedDocumentProxy(String content, String role) {
+    ProtectedDocument(String content, String role) {
         this.real = new RealDocument(content);
         this.role = role;
     }
@@ -15,6 +15,6 @@ class ProtectedDocumentProxy implements Document {
         } else if ("guest".equals(role)) {
             return "[только заголовок] " + real.read().split("\n")[0];
         }
-        return "Доступ запрещён";
+        return "доступ запрещён";
     }
 }

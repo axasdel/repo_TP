@@ -1,6 +1,14 @@
 package adapter;
 
 class SensorAdapter implements TemperatureSensor {
-    private OldFahrenheitSensor old = new OldFahrenheitSensor();
-    public double getCelsius() { return (old.getFahrenheit() - 32) * 5 / 9; }
+    private OldFahrenheitSensor oldSensor;
+
+    SensorAdapter(OldFahrenheitSensor oldSensor) {
+        this.oldSensor = oldSensor;
+    }
+
+    @Override
+    public double getCelsius() {
+        return (oldSensor.getFahrenheit() - 32) * 5 / 9;
+    }
 }
